@@ -19,6 +19,6 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 
 app.use("/users", require("./routes/users"));
-app.listen(5000, () => {
+app.listen(process.env.PORT, () => {
   console.log("success fully server");
 });
